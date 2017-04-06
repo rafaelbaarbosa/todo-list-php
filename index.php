@@ -43,7 +43,7 @@ $activities = $activitiesQuery->rowCount() ? $activitiesQuery : [];
 					<?php if(!$item['done']): ?>
 						<a href="#" class="done-button">Done</a>
 					<?php endif; ?>
-					
+
 					<a href="#" class="delete-button">Delete</a>
 				</li>
 				<?php endforeach; ?>
@@ -55,7 +55,7 @@ $activities = $activitiesQuery->rowCount() ? $activitiesQuery : [];
 			<?php endif; ?>
 
 			<form class="item-add" action="insert.php" method="post">
-				<input type="text" name="name" class="input" placeholder="Type your new activity here!" autocomplete="off" required>
+				<input type="text" name="description" class="input" placeholder="Type your new activity here!" autocomplete="off" required>
 				<input type="submit" value="Add" class="submit">
 			</form>
 		</div>
