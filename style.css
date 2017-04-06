@@ -1,0 +1,77 @@
+body {
+	background-color: #eceff0;
+}
+
+body, input {
+	font-size: 1em;
+	font-family: 'Helvetica';
+	color: 363639;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px solid #363639;
+}
+
+.container {
+	background-color: #fff;
+	margin: 20px auto;
+	width: 100%;
+	max-width: 500px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	box-shadow: 3px 3px 0 #ddd;
+}
+
+.container h1 {
+	margin: 0 0 10px 0;
+}
+
+.activities {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.activities li,
+.item-add .input {
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0;
+}
+
+.input {
+	width: 100%;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.activities .item-done {
+	text-decoration: line-through;
+}
+
+
+.done-button, .delete-button {
+	display: inline-block;
+	font-size: 0.8em;
+	background-color: #d9dfe1;
+	color: #363639;
+	padding: 3px 6px;
+	border: 0;
+	opacity: 0.4;
+}
+
+.done-button:hover, .delete-button:hover {
+	opacity: 1;
+}
+
+.submit {
+	background-color: #fff;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	width: 100%;
+	margin-top: 10px;
+}
