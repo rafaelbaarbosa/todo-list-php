@@ -43,7 +43,7 @@ $activities = $activitiesQuery->rowCount() ? $activitiesQuery : [];
 						<a href="done.php?id=<?php echo $item['id']; ?>" class="done-button">Done</a>
 					<?php endif; ?>
 
-					<a href="#" class="delete-button">Delete</a>
+					<a href="delete.php?id=<?php echo $item['id']; ?>" class="delete-button">Delete</a>
 				</li>
 				<?php endforeach; ?>
 
