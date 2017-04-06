@@ -38,8 +38,12 @@ $activities = $activitiesQuery->rowCount() ? $activitiesQuery : [];
 
 				<?php foreach($activities as $item): ?>
 				<li>
-					<span class="item"><?php echo $item['description']; ?></span>
-					<a href="#" class="done-button">Done</a>
+					<span class="item<?php echo $item['done'] ? ' item-done' : '' ?>"><?php echo $item['description']; ?></span>
+
+					<?php if(!$item['done']): ?>
+						<a href="#" class="done-button">Done</a>
+					<?php endif; ?>
+					
 					<a href="#" class="delete-button">Delete</a>
 				</li>
 				<?php endforeach; ?>
