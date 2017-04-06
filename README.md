@@ -10,4 +10,4 @@
 
 ![activities-table](/img/table.png)
 
-Now you will be able to run this program without any problems. That's all! :)
+Now you will be able to run this program without any problems. Just open index.php and that's all! :)
