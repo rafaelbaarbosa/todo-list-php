@@ -20,8 +20,7 @@ $activities = $activitiesQuery->rowCount() ? $activitiesQuery : [];
 		<meta charset="utf-8">
 		<title>To do</title>
 
-		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
@@ -41,7 +40,7 @@ $activities = $activitiesQuery->rowCount() ? $activitiesQuery : [];
 					<span class="item<?php echo $item['done'] ? ' item-done' : '' ?>"><?php echo $item['description']; ?></span>
 
 					<?php if(!$item['done']): ?>
-						<a href="#" class="done-button">Done</a>
+						<a href="done.php?id=<?php echo $item['id']; ?>" class="done-button">Done</a>
 					<?php endif; ?>
 
 					<a href="#" class="delete-button">Delete</a>

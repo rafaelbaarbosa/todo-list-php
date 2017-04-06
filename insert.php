@@ -2,10 +2,8 @@
 
 require_once 'app/init.php';
 
-if(isset($_POST['description'])) {
+if(isset($_POST['description'])){
 	$description = trim($_POST['description']);
-
-	// echo "$description";
 
 	if(!empty($description)){
 		$insertQuery = $db->prepare("
